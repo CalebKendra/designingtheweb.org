@@ -1,0 +1,80 @@
+---
+title: "Web Design"
+description: "What is a site map?"
+date: "2025-01-15"
+date-format: long
+author: Janyl Jumadinova
+format:
+  revealjs:
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Web Design"
+---
+
+# What is a site map?
+
+::: incremental
+- A file or visual representation that lists the pages of a website
+- Helps users understand website structure
+- Guides search engines for better indexing
+:::
+
+# Why a site map?
+
+::: incremental
+
+**Enhance Navigation**:
+
+- Simplifies locating information
+- Improves user experience
+:::
+
+# Why a site map?
+
+::: incremental
+
+**Boost SEO:**
+
+- Helps search engines index pages efficiently
+- Ensures important content is crawled
+:::
+
+# A site map
+
+::: incremental
+
+**Key Features:**
+
+- Prioritization of pages
+- Inclusion of update frequency
+
+**Two Types::**
+
+- HTML Sitemap: For users
+- XML Sitemap: For search engines
+:::
+
+# Example
+
+::: incremental
+
+Structure:
+
+![An Online Store](example.png)
+:::
+
+
+# Creating a Site Map
+
+::: incremental
+
+- Identify main pages and categories
+- Organize pages hierarchically
+
+- **For Users:** Provide a clickable HTML sitemap for easy navigation
+- **For Search Engines:** Submit an XML sitemap to search engines via tools like Google Search Console
+:::

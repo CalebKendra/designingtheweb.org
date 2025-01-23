@@ -1,0 +1,222 @@
+---
+title: "Using Git Together"
+description: "GitHub Flow and Reviewing Pull Requests"
+date: "2025-01-22"
+date-format: long
+author: Janyl Jumadinova
+format:
+  revealjs:
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Web Design"
+---
+
+
+## Version Control
+
+::: incremental
+
+- Version control helps us react to valuable changes.
+- It enables us to confidently modify software.
+- Commits represent versions, or snapshots, of a system.
+:::
+
+---
+
+## GitHub Flow Overview
+
+- **What is GitHub Flow?**
+  - A lightweight, branch-based collaboration workflow.
+  - [GitHub Flow Documentation](https://docs.github.com/en/get-started/quickstart/github-flow)
+
+---
+
+## Steps in GitHub Flow
+
+::: incremental
+1. Create a descriptively named branch from `main`.
+   ```bash
+   git checkout -b <branch-name>
+   ```
+2. Commit and push your work within this branch.
+   ```bash
+   git add <file>
+   git commit -m "<message>"
+   ```
+3. Merge `main` into your branch and resolve conflicts.
+   ```bash
+   git merge main
+   ```
+4. Open a pull request and request review.
+5. Respond to review feedback.
+6. Once reviewers approve, merge the branch into `main`.
+:::
+
+---
+
+## Best Practices for Pull Requests
+
+::: incremental
+
+### Submitting a Pull Request
+
+- Clean up code before requesting review.
+- Keep pull requests small (< 200 lines).
+- Be open to influence and specific in replies.
+
+### Reviewing a Pull Request
+
+- Be patient and tactful.
+- Focus on algorithmic problems first.
+- Offer alternatives and avoid overwhelming details.
+:::
+---
+
+## Sustainability through GitHub Flow
+
+::: incremental
+- Enables parallel modifications and maintenance.
+- Improves team's ability to react to changes effectively.
+:::
+
+
+---
+
+## Branches
+
+::: incremental
+
+- [Branch Naming Model](https://nvie.com/posts/a-successful-git-branching-model/)
+- [Git Style Guide](https://github.com/agis/git-style-guide)
+:::
+
+## Branch Name: Use Grouping Tokens (Prefixes)
+
+- Helps identify the purpose of the branch:
+  - `feature/`: For new features.
+  - `bugfix/`: For bug fixes.
+  - `hotfix/`: For urgent fixes.
+  - `release/`: For release preparation.
+  - `test/`: For experimental changes.
+
+Example: `feature/add-user-authentication`
+
+---
+
+## Incorporate Issue or Ticket Numbers
+
+- Facilitates tracking and cross-referencing.
+- Example: `feature/1234-add-user-authentication`
+  - `1234` refers to the issue or ticket number.
+---
+
+## Use Descriptive and Concise Names
+
+- Clearly convey the purpose of the branch.
+- Keep names short and meaningful.
+
+Example: `bugfix/fix-login-error` is better than `bugfix/issue-5678`.
+---
+
+## Use Lowercase Letters and Delimiters
+
+- Improves readability and compatibility.
+- Use hyphens (`-`) or underscores (`_`) as delimiters.
+
+Examples:
+
+- `feature/add-user-authentication`
+- `feature/add_user_authentication`
+---
+
+## Avoid Leading Numbers
+
+- Starting with numbers can cause confusion.
+- Prefix numbers with descriptive text.
+
+Example: `feature/issue-1234` instead of `1234-feature`.
+---
+
+## Commits
+
+::: incremental
+
+- Commits contain two parts–the message and the changes since the last commit.
+- Good commit messages enable us to easily locate changes.
+- Follow [commit message conventions](https://www.conventionalcommits.org/en/v1.0.0/).
+
+:::
+
+## Working Together: The Genius Myth
+
+::: incremental
+
+- **Definition**: The tendency to ascribe the success of a team to a single person.
+- **Why it's harmful**:
+  - Creates the misconception that collaboration is unnecessary.
+  - Undermines the fact that software engineering is a team endeavor.
+:::
+
+
+##  Why is sharing knowledge important?
+
+::: incremental
+- Enables early detection of issues.
+- Supports rapid feedback loops, enhancing sustainability.
+- Increases the "bus factor": the number of people who need to be hit by a bus before a project is doomed.
+  - *"It is better to be one part of a successful project than the critical part of a failed project."*
+:::
+
+
+## Consequences of poor knowledge sharing:
+
+::: incremental
+- If a developer leaves without sharing, it disrupts software maintenance and enhancement.
+- Newcomers lacking knowledge introduce defects, diverting time from valuable changes.
+:::
+
+
+## What Knowledge Should Be Shared?
+
+::: incremental
+
+- The **"why"** behind:
+  - Design decisions
+  - Development choices
+  - Testing strategies
+- Post-mortem learnings: *"Don’t erase your tracks—light them up like a runway for those who follow you!"*
+
+:::
+
+## Tools for Knowledge Sharing
+
+::: incremental
+- Issue trackers
+- GitHub Pages / Documentation websites
+- Discord or similar platforms
+- StackOverflow
+- Source code comments
+:::
+
+
+## Conway’s Law
+
+- **Definition**: Software reflects the communication structure of the team producing it.
+- **Implication**:
+  - Good communication = Good software
+
+
+## Qualities of a Good Team Member
+
+### Embrace:
+
+::: incremental
+- **Humility**: Be open to influence and willing to change your mind.
+- **Respect**: Learn to give and take criticism; remember, *you are not your code*.
+- **Trust**: Be patient and act with trust, even if it's not a feeling yet.
+:::
+

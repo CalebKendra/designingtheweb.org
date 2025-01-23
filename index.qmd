@@ -1,0 +1,18 @@
+---
+title: "Web Design"
+layout: full
+toc: false
+---
+
+## Course Overview
+
+This course introduces the foundational principles and practices of web design. Students develop the skills to create responsive, accessible, and aesthetically engaging websites that adhere to web standards and design principles. Students  explore web technologies, including HTML, CSS, JavaScript, Markdown, React, and 11ty (Eleventy) static site generators, while learning about web accessibility, design patterns, and wireframing with Figma.
+
+## Learning Outcomes
+
+1. Apply HTML, CSS, Markdown, and basic Javascript to develop well-structured, responsive World Wide Web Consortium (W3C) standards-compliant web sites.
+2. Evaluate and implement web accessibility measures consistent with the Web Content Accessibility Guidelines (WCAG) version 2 specification.
+3. Design front-end user experiences using accepted web design patterns, methods, and information structures.
+4. Identify and use strategies of successful visual rhetoric for the web.
+5. Compare and select web technologies such as static site generators or frameworks as appropriate candidates for building web sites.
+

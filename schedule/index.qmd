@@ -1,0 +1,88 @@
+---
+title: "Schedule"
+layout: full
+---
+
+## Important Dates
+
+- January 13: No Lab
+- January 20: No Class
+- March 3-7: No Classes
+- April 7: No Class
+- April 11: No Class
+- April 28: Community Project Presentation
+
+## Weekly Schedule
+
+### Week 1 (Jan 13-17): Introduction to Web Design and Tools  
+- Topics: Overview of web design, development tools, workflows, and sitemapping  
+- Tasks:  
+  - Review [CMPSC 104 materials](https://github.com/allegheny-college-cmpsc-104-Fall-2024/classDocs/tree/main/lessons): Git, VSCode, Markdown
+  - Read Chapter 1: Basics in [Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial)  
+  - [Slides: Sitemap](week1/index.qmd)
+  - [Technical Challenge: Sitemap](https://classroom.github.com/a/4uWr1dqq)
+
+### Week 2 (Jan 20-24): Markdown, Quarto, and Introduction to Software Engineering  
+- Topics: Markdown, Quarto, Wireframing and Software Engineering process
+- Tasks:  
+  - [Web Project 1: Course Website](https://classroom.github.com/a/TWfWTBaQ)
+  - Read Chapter 1: Process in [Web Style Guide](https://www.webstyleguide.com/wsg3/1-process)  
+  - Read Chapter 1 in [Adaptive Web Design](https://adaptivewebdesign.info/1st-edition/read/)
+  - [Slides: Software Engineering Process](week2/index.qmd)
+  - [Slides: Quarto and Wireframing](week2_2/index.qmd)
+  - [Slides: Sprints](week2_3/index.qmd)
+
+### Week 3 (Jan 27-31): HTML Basics  
+- Topics: Structure of HTML documents, semantic HTML, and elements  
+- Tasks:  
+  - Quiz 1 on January 31st
+
+### Week 4 (Feb 3-7): CSS Basics and Box Model  
+- Topics: Styling with CSS, box model, positioning, and layout  
+
+### Week 5 (Feb 10-14): Design Principles  
+- Topics: Visual hierarchy, color theory, typography  
+- Tasks:  
+  - Web Project 2 Introduction: Personal Website 
+
+### Week 6 (Feb 17-21): Responsive Design  
+- Topics: Media queries, flexible grids, responsive images 
+- Tasks:  
+  - Quiz 2 on February 21st 
+
+### Week 7 (Feb 24-28): Accessibility Basics  
+- Topics: WCAG 2 standards, testing tools, creating accessible content  
+
+### Week 8 (Mar 1-9): Spring Break
+- No class meetings. Use this time to rest, reflect, and recharge.
+
+### Week 9 (Mar 10-14): Advanced CSS and Design Patterns   
+- Topics: Flexbox, Grid, and web design patterns  
+- Tasks:  
+  - Web Project 3 Introduction: Community Website 
+  - Quiz 3 on March 14th 
+
+### Week 10 (Mar 17-21): Javascript  
+- Topics: JavaScript syntax, DOM manipulation, basic interactivity  
+
+### Week 11 (Mar 24-28): Introduction to React 
+- Topics: React fundamentals, components   
+
+### Week 12 (Mar 31-Apr 4): React  
+- Topics: React props, and state  
+- Tasks:  
+  - Quiz 4 on April 4th
+
+### Week 13 (Apr 7-9): Building with React and Static Site Generators  
+- Topics: Using React with 11ty or integrating React components into static sites  
+
+### Week 14 (Apr 14-18): Web Performance Optimization  
+- Topics: Minimizing load times, SEO basics, performance audits  
+
+### Week 15 (Apr 21-25): Final Project Development  
+- Activities: Web portfolio work time.
+- Tasks:  
+  - Quiz 5 on April 21st
+
+### Final Exam Week (Apr 28-May 6): Project Presentation and Reflection  
+- Activities: Present final projects, peer reviews, course reflection
