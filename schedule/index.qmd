@@ -35,6 +35,10 @@ layout: full
 ### Week 3 (Jan 27-31): HTML Basics  
 - Topics: Structure of HTML documents, semantic HTML, and elements  
 - Tasks:  
+  - Review [CMPSC 104 materials](https://github.com/allegheny-college-cmpsc-104-Fall-2024/classDocs/tree/main/lessons): HTML
+  - Read [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  - Read [Markup](https://adaptivewebdesign.info/1st-edition/read/chapter-2.html)
+  - Technical Challenge 2
   - Quiz 1 on January 31st
 
 ### Week 4 (Feb 3-7): CSS Basics and Box Model  
