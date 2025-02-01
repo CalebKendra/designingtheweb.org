@@ -327,5 +327,103 @@
     "title": "Scrum Process: Sprints",
     "section": "Sprint",
     "text": "Sprint\nA short, focused period (typically 2 weeks) where the team delivers a specific goal.\nSprint Lifecycle:\n\nSprint Planning: Define sprint goals and tasks.\nDaily Stand-Ups: Stay aligned and address blockers.\nSprint Review: Present the increment to stakeholders.\nSprint Retrospective: Reflect and improve the process."
+  },
+  {
+    "objectID": "schedule/week4/index.html#introduction",
+    "href": "schedule/week4/index.html#introduction",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "1. Introduction",
+    "text": "1. Introduction\n\n\nThe significance of visual design in shaping user experience.\nOverview of fundamental principles for effective interfaces."
+  },
+  {
+    "objectID": "schedule/week4/index.html#visual-hierarchy-core-concepts",
+    "href": "schedule/week4/index.html#visual-hierarchy-core-concepts",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "Visual Hierarchy: Core Concepts",
+    "text": "Visual Hierarchy: Core Concepts\n\n\nImportance of ordering and arranging elements to guide attention.\nTechniques: size, color, contrast, and spacing."
+  },
+  {
+    "objectID": "schedule/week4/index.html#visual-hierarchy-practical-tips",
+    "href": "schedule/week4/index.html#visual-hierarchy-practical-tips",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "3. Visual Hierarchy: Practical Tips",
+    "text": "3. Visual Hierarchy: Practical Tips\n\n\nKeep key elements larger or bolder.\nUse whitespace to help users focus.\nGroup related items together using proximity.\nPrioritize content based on importance and context.\nMore details at Web Style Guide: Chapter 2."
+  },
+  {
+    "objectID": "schedule/week4/index.html#color-theory",
+    "href": "schedule/week4/index.html#color-theory",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "4. Color Theory",
+    "text": "4. Color Theory\n\n\nBasics of color relationships and contrast.\nAccessibility considerations (e.g., color-blind palettes).\nUse high contrast for readability and usability.\nCreate color schemes with complementary and analogous colors.\nUse color meaning to evoke emotion or direct attention."
+  },
+  {
+    "objectID": "schedule/week4/index.html#typography-fundamentals",
+    "href": "schedule/week4/index.html#typography-fundamentals",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "5. Typography Fundamentals",
+    "text": "5. Typography Fundamentals\n\n\nFont selection, spacing, and line height.\nReadability across devices.\nUse clear and legible fonts for better accessibility.\nAdjust line height and spacing for comfortable reading.\nAvoid using too many font types to ensure consistency.\nOpt for responsive typography that scales well on different screen sizes."
+  },
+  {
+    "objectID": "schedule/week4/index.html#crap-principles",
+    "href": "schedule/week4/index.html#crap-principles",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "6. CRAP Principles",
+    "text": "6. CRAP Principles\n\n\nContrast: Differentiate elements for clarity.\nRepetition: Maintain consistency in design.\nAlignment: Position elements deliberately.\nProximity: Group related items together."
+  },
+  {
+    "objectID": "schedule/week4/index.html#examples-of-crap-in-action",
+    "href": "schedule/week4/index.html#examples-of-crap-in-action",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "7. Examples of CRAP in Action",
+    "text": "7. Examples of CRAP in Action\n\n\n\n\n\nC\n\n\n\n\n\nR\n\n\n\n\n\nA"
+  },
+  {
+    "objectID": "schedule/week4/index.html#balancing-aesthetics-and-usability",
+    "href": "schedule/week4/index.html#balancing-aesthetics-and-usability",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "8. Balancing Aesthetics and Usability",
+    "text": "8. Balancing Aesthetics and Usability\n\n\nCombine visual hierarchy, color theory, and typography.\nKeep CRAP principles in mind to maintain clarity.\nEnsure accessibility is not overlooked for aesthetic choices."
+  },
+  {
+    "objectID": "schedule/week4/index.html#further-reading-tools",
+    "href": "schedule/week4/index.html#further-reading-tools",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "9. Further Reading & Tools",
+    "text": "9. Further Reading & Tools\n\n\nWeb Style Guide: Chapter 2 - Interface Design\nColor Theory Basics\nTypography Guide"
+  },
+  {
+    "objectID": "schedule/week4/index.html#final-thoughts",
+    "href": "schedule/week4/index.html#final-thoughts",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "10. Final Thoughts",
+    "text": "10. Final Thoughts\n\n\nEffective collaboration: share insights on design choices.\nApply these principles continuously for better user experiences."
+  },
+  {
+    "objectID": "schedule/week4/index.html#motivation",
+    "href": "schedule/week4/index.html#motivation",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "1. Motivation",
+    "text": "1. Motivation\n\n\nVisual design is important in shaping user experience."
+  },
+  {
+    "objectID": "schedule/week4/index.html#image-sources",
+    "href": "schedule/week4/index.html#image-sources",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "Image Sources:",
+    "text": "Image Sources:\n\nVisual Hierarchy Example: 15 Golden Principles of Visual Hierarchy\nColor Wheel and Theory: Color Theory Basics: The Color Wheel and Finding Complementary Colors\nTypography Design: Font Typography: 50 Brilliant Typography Designs To Inspire You\nCRAP Design Principles: CRAP Design Principles: Creating a Great UX Design [Infographic]"
+  },
+  {
+    "objectID": "schedule/week4/index.html#usability",
+    "href": "schedule/week4/index.html#usability",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "Usability",
+    "text": "Usability\n\n\nUsability: Measure of effectiveness\nVisual design is important in shaping user experience.\n\nUniversal Usability\n\nAccessibility (WAI)\nUsability\nUniversal Design"
+  },
+  {
+    "objectID": "schedule/week4/index.html#color-theory-1",
+    "href": "schedule/week4/index.html#color-theory-1",
+    "title": "Visual Hierarchy, Color Theory, Typography, & CRAP Principles",
+    "section": "4. Color Theory",
+    "text": "4. Color Theory\n\n\n\n\nColor Wheel and Theory"
   }
 ]

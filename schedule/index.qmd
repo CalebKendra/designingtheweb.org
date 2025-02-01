@@ -41,13 +41,23 @@ layout: full
   - Technical Challenge 2
   - Quiz 1 on January 31st
 
-### Week 4 (Feb 3-7): CSS Basics and Box Model  
-- Topics: Styling with CSS, box model, positioning, and layout  
+### Week 4 (Feb 3-7): CSS Basics and Design Principles  
+- Topics: Design Principles & User Experience 
+  - Read [What is CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS)
+  - Read [Universal Usability](https://www.webstyleguide.com/wsg3/2-universal-usability/index.html)
+  - Read [Interface Design](https://www.webstyleguide.com/wsg3/4-interface-design/index.html)
+  - Read [Page Structure](https://www.webstyleguide.com/wsg3/6-page-structure/index.html)
+  - Read [Responsive Design](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
+  - [Slides: Design Principles](week4/index.qmd)
 
-### Week 5 (Feb 10-14): Design Principles  
-- Topics: Visual hierarchy, color theory, typography  
+### Week 5 (Feb 10-14): Advanced CSS and Accessibility 
+- Topics: Positioning, layout, accessibility
 - Tasks:  
   - Web Project 2 Introduction: Personal Website 
+  - Read [Flexbox](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox)
+  - Read [CSS Positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+  - Read [CSS Grid](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Grids)
+  - Ref: [Web Accessibility](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility)
 
 ### Week 6 (Feb 17-21): Responsive Design  
 - Topics: Media queries, flexible grids, responsive images 
