@@ -20,12 +20,12 @@ layout: full
   - Review [CMPSC 104 materials](https://github.com/allegheny-college-cmpsc-104-Fall-2024/classDocs/tree/main/lessons): Git, VSCode, Markdown
   - Read Chapter 1: Basics in [Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial)  
   - [Slides: Sitemap](week1/index.qmd)
-  - [Technical Challenge: Sitemap](https://classroom.github.com/a/4uWr1dqq)
+  - [Technical Challenge 1: Sitemap](https://classroom.github.com/a/4uWr1dqq)
 
 ### Week 2 (Jan 20-24): Markdown, Quarto, and Introduction to Software Engineering  
 - Topics: Markdown, Quarto, Wireframing and Software Engineering process
 - Tasks:  
-  - [Web Project 1: Course Website](https://classroom.github.com/a/TWfWTBaQ)
+  - [Web Project 1: Course Website - Sprint 1](https://classroom.github.com/a/TWfWTBaQ)
   - Read Chapter 1: Process in [Web Style Guide](https://www.webstyleguide.com/wsg3/1-process)  
   - Read Chapter 1 in [Adaptive Web Design](https://adaptivewebdesign.info/1st-edition/read/)
   - [Slides: Software Engineering Process](week2/index.qmd)
@@ -38,17 +38,20 @@ layout: full
   - Review [CMPSC 104 materials](https://github.com/allegheny-college-cmpsc-104-Fall-2024/classDocs/tree/main/lessons): HTML
   - Read [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
   - Read [Markup](https://adaptivewebdesign.info/1st-edition/read/chapter-2.html)
-  - Technical Challenge 2
+  - [Technical Challenge 2: Semantic HTML](https://classroom.github.com/a/32KcroMs)
   - Quiz 1 on January 31st
 
 ### Week 4 (Feb 3-7): CSS Basics and Design Principles  
 - Topics: Design Principles & User Experience 
   - Read [What is CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS)
+  - Read [Box Model](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model)
+  - Read [Responsive Design](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
   - Read [Universal Usability](https://www.webstyleguide.com/wsg3/2-universal-usability/index.html)
   - Read [Interface Design](https://www.webstyleguide.com/wsg3/4-interface-design/index.html)
   - Read [Page Structure](https://www.webstyleguide.com/wsg3/6-page-structure/index.html)
-  - Read [Responsive Design](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
-  - [Slides: Design Principles](week4/index.qmd)
+  - [Slides: Design Principles and Responsiveness](week4/index.qmd)
+  - [Technical Challenge 3](https://classroom.github.com/a/f1JC8UnX)
+  - [Web Project 1: Course Website - Sprint 2](https://classroom.github.com/a/TWfWTBaQ)
 
 ### Week 5 (Feb 10-14): Advanced CSS and Accessibility 
 - Topics: Positioning, layout, accessibility

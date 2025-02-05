@@ -1,5 +1,5 @@
 ---
-title: "Visual Hierarchy, Color Theory, Typography, & CRAP Principles"
+title: "Design Principles and Responsiveness"
 description: "Fundamental design principles for user interfaces"
 date: "2025-02-03"
 date-format: long
@@ -99,11 +99,96 @@ format:
 
 ---
 
-## Website Review
+## Responsive Web Design
 
-Critique a website based on:
+- Ensures websites adapt to different screen sizes
+- Improves user experience on all devices
+- Uses flexible layouts, images, and media queries
 
-- **Visual Hierarchy:** Does the layout make the most important information stand out? How are headings, subheadings, and calls to action organized?
-- **Color Use:** Does the color scheme enhance or hinder readability? Does the design convey the intended message or mood?
-- **Typography:** How readable is the text? Are headings and body text appropriately styled and sized?
-- **CRAP:** How are the fundamental design principles (Contrast, Repetition, Alignment, Proximity) used or not used?
+---
+
+## Key Concepts
+
+### Fluid Grids
+- Use percentage-based widths instead of fixed pixels
+
+### Flexible Images
+- `max-width: 100%; height: auto;`
+
+### Media Queries
+- Apply styles based on screen size:
+  ```css
+  @media (max-width: 600px) {
+      body {
+          background-color: lightgray;
+      }
+  }
+  ```
+
+---
+
+## What is CSS?  
+
+- **CSS (Cascading Style Sheets)** is used to style and layout HTML elements.  
+- It controls **colors, fonts, spacing, positioning, and responsiveness**.  
+- Works alongside HTML:  
+  - HTML provides **structure**.  
+  - CSS provides **style and layout**.  
+
+---
+
+## How CSS is Applied
+
+- **Inline CSS** (`style` attribute in an element).
+- **Internal CSS** (`<style>` tag in `<head>`).
+- **External CSS** (linked `.css` file).
+
+```css
+/* Example External CSS */
+h1 {
+  color: blue;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+```
+---
+
+## The CSS Box Model
+
+Every HTML element is a rectangular box with four key parts:  
+- **Content**: The actual text, image, or element.  
+- **Padding**: Space between content and border.  
+- **Border**: The outline around the padding and content.  
+- **Margin**: Space outside the border, affecting separation from other elements.  
+
+---
+
+## The CSS Box Model
+
+::: {.center}
+![Box Model Diagram](https://media.gcflearnfree.org/content/5ef2084faaf0ac46dc9c10be_06_23_2020/box_model.png)
+:::
+
+- `box-sizing` affects how the width/height of elements is calculated:
+  - **`content-box`** (default): Width excludes padding and border.
+  - **`border-box`**: Width includes padding and border.
+
+---
+
+## **CSS Units**
+- **Absolute:** `px` (fixed size)
+- **Relative:** `em`, `rem` (based on font size), `%` (relative to parent)
+- **Viewport-based:** `vh`, `vw` (based on screen size)
+
+## **Margin Collapse**
+- When two vertical margins meet, the larger one takes effect instead of stacking.
+- **Fixes:** Add `padding`, `border`, or `overflow: hidden` to elements.
+
+## **Overflow Handling**
+- What happens when content exceeds its container?
+  - `visible` (default): Content spills out.
+  - `hidden`: Content is clipped.
+  - `scroll`: Adds a scrollbar.
+  - `auto`: Scrollbar appears if needed.
+
+---
