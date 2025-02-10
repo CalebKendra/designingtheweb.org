@@ -1,0 +1,118 @@
+---
+title: "CSS Positioning, Flexbox, and Grid Layout"
+description: "Fundamental design principles for user interfaces"
+date: "2025-02-08"
+date-format: long
+author: Janyl Jumadinova
+format:
+  revealjs:
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Web Design"
+---
+
+## CSS Layout Techniques
+- CSS Positioning
+- Flexbox
+- Grid Layout
+
+---
+
+## Positioning Methods in CSS
+- **Static**: Default positioning
+- **Relative**: Positioned relative to its normal position
+- **Absolute**: Positioned relative to the nearest positioned ancestor
+- **Fixed**: Stays in place even when scrolling
+
+---
+
+## CSS Positioning - Example
+
+
+Modify the position of elements with relative, absolute, and fixed values:
+
+```css
+.box {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+```
+
+---
+
+## Flexbox Basics
+
+Main axis vs. Cross axis
+
+- `justify-content`: Align items along the main axis
+- `align-items`: Align items along the cross axis
+
+Flex properties: `flex-grow`, `flex-shrink`, `flex-basis`
+
+---
+
+## Flexbox - Example Layout
+
+Creating responsive layouts with Flexbox
+
+```css
+.container {
+  display: flex;
+  justify-content: center;  // Centers items horizontally
+  align-items: center;      // Centers items vertically
+}
+
+.item {
+  flex: 1;                 // Makes items grow equally
+}
+```
+
+---
+
+## Grid Layout vs Flexbox
+
+- **Grid**: Use for two-dimensional layouts (rows and columns)
+- **Flexbox**: Use for one-dimensional layouts (row or column)
+
+Defining rows and columns:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+```
+
+---
+
+## Grid Layout - Example
+
+Using grid-template-rows, grid-template-columns, and grid-gap:
+
+```css
+.container {
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
+```
+
+---
+
+## Responsive Grid Layouts
+
+Use media queries to adjust layouts dynamically:
+
+```css
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+```

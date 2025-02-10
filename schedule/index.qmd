@@ -61,6 +61,9 @@ layout: full
   - Read [CSS Positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
   - Read [CSS Grid](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Grids)
   - Ref: [Web Accessibility](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility)
+  - [Slides: Advanced CSS and Accessibility](week5/index.qmd)
+  - [Technical Challenge 4](https://classroom.github.com/a/i1_T0PjS)
+  - [Web Project 2: Personal Website - Stage 1]()
 
 ### Week 6 (Feb 17-21): Responsive Design  
 - Topics: Media queries, flexible grids, responsive images 

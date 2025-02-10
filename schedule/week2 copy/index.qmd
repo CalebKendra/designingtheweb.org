@@ -1,0 +1,107 @@
+---
+title: "Visual Hierarchy, Color Theory, Typography, & CRAP Principles"
+description: "Fundamental design principles for user interfaces"
+date: "2025-02-03"
+date-format: long
+author: Janyl Jumadinova
+format:
+  revealjs:
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Web Design"
+---
+
+## Usability
+::: incremental
+- Usability: Measure of effectiveness
+- Visual design is important in shaping user experience.
+
+### Universal Usability
+- Accessibility ([WAI](https://www.w3.org/WAI/))
+- Usability
+- Universal Design
+:::
+
+---
+
+## Visual Hierarchy: Core Concepts
+::: incremental
+- Importance of ordering and arranging elements to guide attention.
+- Techniques: size, color, contrast, and spacing.
+![Visual Hierarchy Example](https://seahawkmedia.com/wp-content/uploads/2024/08/visual-hierarchy-importance-1024x681.jpg)
+:::
+
+---
+
+## Visual Hierarchy: Practical Tips
+::: incremental
+- Keep key elements larger or bolder.
+- Use whitespace to help users focus.
+- Group related items together using proximity.
+- Prioritize content based on importance and context.
+- More details at [Web Style Guide: Chapter 2](https://www.webstyleguide.com/wsg3/2-universal-usability/index.html).
+:::
+
+---
+
+## Color Theory
+::: incremental
+- Basics of color relationships and contrast.
+- Accessibility considerations (e.g., color-blind palettes).
+- Use high contrast for readability and usability.
+- Create color schemes with complementary and analogous colors.
+- Use color meaning to evoke emotion or direct attention.
+![Color Wheel and Theory](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/BYR_color_wheel.svg/1024px-BYR_color_wheel.svg.png)
+:::
+---
+
+## Typography Fundamentals
+::: incremental
+- Font selection, spacing, and line height.
+- Readability across devices.
+- Use clear and legible fonts for better accessibility.
+- Adjust line height and spacing for comfortable reading.
+- Avoid using too many font types to ensure consistency.
+- Opt for responsive typography that scales well on different screen sizes.
+:::
+
+---
+
+## CRAP Principles
+::: incremental
+- **Contrast**: Differentiate elements for clarity.
+- **Repetition**: Maintain consistency in design.
+- **Alignment**: Position elements deliberately.
+- **Proximity**: Group related items together.
+:::
+
+---
+
+## Examples of CRAP in Action
+::: incremental
+- ![C](https://jordanudy.weebly.com/uploads/9/7/7/9/97791440/contrast_orig.jpeg)
+- ![R](https://www.glidedesign.com/wp-content/uploads/crap-design-principle-repetition-web-design.jpg)
+- ![A](https://www.glidedesign.com/wp-content/uploads/crap-design-principle-alignment-web-design.jpg)
+:::
+
+---
+
+## Balancing Aesthetics and Usability
+::: incremental
+- Combine visual hierarchy, color theory, and typography.
+- Keep CRAP principles in mind to maintain clarity.
+- Ensure accessibility is not overlooked for aesthetic choices.
+:::
+
+---
+
+## Website Review
+
+Critique a website based on the three principles:
+- **Visual Hierarchy:** Does the layout make the most important information stand out? How are headings, subheadings, and calls to action organized?
+- **Typography:** How readable is the text? Are headings and body text appropriately styled and sized?
+- **Color Use:** Does the color scheme enhance or hinder readability? Does the design convey the intended message or mood?
