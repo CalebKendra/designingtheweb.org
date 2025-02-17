@@ -1,5 +1,5 @@
 ---
-title: "Internationalization & Advanced Responsive Techniques"
+title: "Advanced Responsive Techniques"
 description: "Design and Accessibility"
 date: "2025-02-17"
 date-format: long
