@@ -68,16 +68,21 @@ layout: full
 ### Week 6 (Feb 17-21): Responsive Design  
 - Topics: Media queries, flexible grids, responsive images 
 - Tasks:  
+  - Read [Responsive web design basics](https://web.dev/articles/responsive-web-design-basics)
+  - Read [Responsive Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+  - Read [Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+  - [Slides: Responsive Design](week6/index.qmd)
   - Quiz 2 on February 21st 
 
 ### Week 7 (Feb 24-28): Accessibility   
-- Topics: WCAG 2 standards, testing tools, creating accessible content  
+- Topics: More on creating accessible content  
+- Project 1: Sprint 2 DUE on February 24th by 2:30pm
 
 ### Week 8 (Mar 1-9): Spring Break
 - No class meetings. Use this time to rest, reflect, and recharge.
 
-### Week 9 (Mar 10-14): Advanced CSS and Design Patterns   
-- Topics: Flexbox, Grid, and web design patterns  
+### Week 9 (Mar 10-14): Javascript    
+- Topics: JavaScript syntax, DOM manipulation, basic interactivity   
 - Tasks:  
   - Project 2: Stage 1 Due on March 10th by 2:30pm (peer reviews during the lab). 
   - Project 2: Personal Website - Stage 2.
@@ -85,7 +90,7 @@ layout: full
   - Quiz 3 on March 14th 
 
 ### Week 10 (Mar 17-21): Javascript  
-- Topics: JavaScript syntax, DOM manipulation, basic interactivity  
+- Topics: More advanced Javascript 
 
 ### Week 11 (Mar 24-28): Introduction to React 
 - Topics: React fundamentals, components   
