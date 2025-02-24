@@ -108,6 +108,11 @@ There are three required projects: course website, personal website, community p
 
 [Tokens](https://forms.gle/MbV2iXiojrezyRE48) may be used for these assignments as described in the department's policy with the exception of the final submission of the web portfolio. A token must be requested *at most one week after* the assignment deadline.
 
+At most two extra tokens may be earned by doing the following: 
+1. participate in two events related to CIS and/or participate in the hackathon (must contribute to a project) 
+AND 
+2. submit reflection using this [Extra Token Request Form](https://forms.gle/bTsNHLqsZMiTjjqB6).
+
 ## Allegheny College Policy and Awareness Statements
 
 ### Statement of Community
