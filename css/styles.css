@@ -1,0 +1,480 @@
+/* 
+CSS Table of Contents
+
+- CSS Variables
+- Base Styles
+- Home Page
+  - Snapshot Calendar
+  - Featured Pages
+  - About Section
+- Header Styling
+- Footer Styling
+*/
+
+/* CSS Variables */
+
+:root {
+  --background-color: #D9D9D9;
+  --primary-color: #1B3054;
+  --secondary-color: #80BD41;
+  --tertiary-color: #CEF7A0;
+  --accent-color: #FFEB96;
+  --gray: #D9D9D9;
+  --font-family: 'Inconsolata', monospace;
+}
+
+/* Base Styles */
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a /* Links */ {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* Home Page */
+
+/* Snapshot Calendar */
+#calendar {
+    width: 100%;
+    padding: 2rem;
+    background-color: #1B3054 !important; /* Force dark blue */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  /* Month-Year Header */
+  #month-year {
+    width: fit-content;
+    margin: 0 auto 0.5rem;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: white;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Green Line */
+  #line {
+    height: 4px;
+    background-color: var(--secondary-color);
+    border-left: 1px solid var(--gray);
+    border-right: 1px solid var(--gray);
+    margin: 0.5rem 0;
+  }
+  
+  /* Grid Setup */
+  #days-of-week, #date-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: var(--gray);
+    gap: 2px;
+    padding: 2px;
+  }
+  
+  /* Weekday Header */
+  #days-of-week {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #days-of-week > div {
+    background-color: white;
+    border: 1px solid var(--gray);
+    padding: 1rem;
+    text-align: center;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: bold;
+    flex: 1;
+    min-width: 0;
+  }
+  
+  #date-grid > .day::before {
+    content: attr(data-date);
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  
+  #date-grid > .day.special {
+    background-color: white;
+    border: 1px solid var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: bold;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    min-height: 100px;
+    overflow: hidden;
+    position: relative;
+    padding: 5px;
+  }
+  
+  /* Date Cells */
+  #date-grid > .day {
+    background-color: white;
+    border: 1px solid var(--gray);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: bold;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    min-height: 100px;
+    overflow: hidden;
+    position: relative;
+    padding: 5px;
+  }
+  
+  #date-grid > .day.special .event-type {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    #days-of-week > div {
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
+        padding: 0.5rem;
+    }
+    #date-grid > .day {
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        min-height: 80px;
+        padding: 5px;
+    }
+    #date-grid > .day.special {
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        min-height: 80px;
+        padding: 5px;
+    }
+    #date-grid > .day.special .event-type {
+        font-size: clamp(0.7rem, 1.2vw, 0.9rem);
+        padding: 0.1rem 0.3rem;
+    }
+  }
+
+/* Featured Pages */
+#featured {
+  width: 100%; /* Ensure it stretches across the full width */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 2rem;
+  padding: 0; /* Remove padding to ensure proper alignment */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box; /* Include padding in the width calculation */
+  margin-top: 1rem
+}
+
+.page p {
+  font-size: 20px;
+}
+
+.page img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.featured-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem; /* Reduce space between elements */
+  padding: 2rem;
+}
+
+.featured-page {
+  width: 250px; /* Reduce width */
+  padding: 1rem;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.featured-page img {
+  max-width: 80px; /* Reduce image size */
+  height: auto;
+}
+
+.featured-page h1 {
+  font-size: 1.2rem; /* Smaller title */
+}
+
+.featured-page p {
+  font-size: 0.9rem; /* Smaller text */
+}
+
+.featured-page:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile Layout */
+@media (max-width: 788px) {
+  #featured {
+      width: 100%; /* Ensure it stretches across the full width */
+      display: grid;
+      grid-template-columns: 1fr; /* Stack items vertically */
+      padding: 0; /* Remove padding to ensure proper alignment */
+      margin: 0; /* Remove margin to ensure proper alignment */
+      box-sizing: border-box; /* Include padding in the width calculation */
+  }
+
+  .page {
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem; /* Add margin between items */
+      box-sizing: border-box; /* Include padding in the width calculation */
+  }
+
+  .page p {
+      font-size: 16px;
+  }
+
+  .page img {
+      width: 40%;
+  }
+}
+
+/* Additional Media Query for 375px width */
+@media (max-width: 375px) {
+  #featured {
+      padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .page {
+      padding: 0.5rem; /* Adjust padding for smaller screens */
+      width: 100%; /* Ensure it stretches across the full width */
+      box-sizing: border-box; /* Include padding in the width calculation */
+  }
+
+  .page p {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .page img {
+      width: 60%; /* Adjust image width for smaller screens */
+  }
+}
+
+/* About Section */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.logo-box {
+  background-color: var(--tertiary-color);
+  border: 5px solid var(--secondary-color);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  width: 40%;
+  max-width: 500px;
+  min-height: 400px;
+  flex: 1;
+}
+
+.logo-box img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#content {
+  flex: 2;
+  max-width: 600px;
+}
+
+/* Responsive Typography */
+#content h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: bold;
+}
+
+#content p {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  line-height: 1.6;
+}
+
+/* Mobile Layout */
+@media (max-width: 788px) {
+  #about {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+  }
+
+  .logo-box {
+      width: 80%;
+      min-height: 300px;
+  }
+
+  #content {
+      max-width: 90%;
+  }
+}
+
+/* Header Styling */
+
+.navbar {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #00274D !important; /* Force dark blue */
+  color: white;
+  padding: 15px 30px;
+  box-sizing: border-box;
+}
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #FFD700;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar img {
+    max-height: 2em; /* Reduce size */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .navbar a {
+      font-size: 1rem;
+    }
+  }
+  
+
+/* Footer */
+footer {
+  width: 100vw; /* Ensures it spans the full viewport width */
+  max-width: 100%;
+  background-color: #1B3054 !important; 
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.footer-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns for larger screens */
+  gap: 10px;
+  padding: 10px;
+  justify-items: center; /* Center the content within each column */
+}
+
+.footer-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+a {
+  color: #FFEB96;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* Stacks footer content into one column on small screens */
+    gap: 15px; /* Increase gap for better spacing */
+  }
+
+  .footer-col {
+    flex-direction: column; /* Stack items vertically inside each footer column */
+    align-items: center; /* Keep items centered horizontally */
+    justify-content: center; /* Ensure content is centered vertically */
+  }
+}
