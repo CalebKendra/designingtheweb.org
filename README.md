@@ -31,18 +31,22 @@ Collaboratively implement all desired features for the course website, [designin
   - Use a branching strategy with pull requests
   - Minimum of **2 of your team members** AND **1 lead team member** must review each PR
 
-- **Required Features Summary:**
-  - Professional layout and design system
-  - New logo and cohesive branding
-  - Responsive and accessible implementation
-  - Infrastructure for prioritized features from Sprint 1:
-    1. A new page to the website that contains all the students who have contributed to the enhancement of the website
-    2. Calendar view of the schedule
-    3. Resource page
-    4. Upgrade the syllabus page (nothing needs to be done for this one now)
-    5. Add ads
-    6. Search bar
-    7. Light/dark mode capability
+- **Required Features:**
+  Each team must implement one "big item" and one "small item" feature. Also each member of the team must have a contributable task (must show up on GitHub). If the team's features are not sufficient to be distributed across members, members must work with the lead team to determine additional features to implement.
+  * indicates that those features need to be undertaken by the same team.
+  **Big Items:**
+    - Calendar*
+    - Ads
+    - Resources
+    - Syllabus
+    - Interactive Quiz
+      
+  **Small Items:**
+    - Dark/light mode
+    - Search bar
+    - Contributor page
+    - Homepage calendar improvements* (week/month toggle)
+    - 404 page (game)
 
 See the Assessment Criteria section below for detailed requirements and grading specifications.
 
