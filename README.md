@@ -34,6 +34,7 @@ Collaboratively implement all desired features for the course website, [designin
 - **Required Features:**
   Each team must implement one "big item" and one "small item" feature. Also each member of the team must have a contributable task (must show up on GitHub). If the team's features are not sufficient to be distributed across members, members must work with the lead team to determine additional features to implement.
   * indicates that those features need to be undertaken by the same team.
+    
   **Big Items:**
     - Calendar*
     - Ads
