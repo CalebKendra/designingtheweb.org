@@ -38,14 +38,14 @@ document.addEventListener("DOMContentLoaded", async function () {
           formString += `
             <div class="question">
                 <h3>${quizData[question].question}</h3>
-                <input type="radio" name="${question}" id="1-${quizData[question].options[0]}" value="${quizData[question].options[0]}">
-                <label for="1-${quizData[question].options[0]}">${quizData[question].options[0]}</label><br>
-                <input type="radio" name="${question}" id="2-${quizData[question].options[1]}" value="${quizData[question].options[1]}">
-                <label for="2-${quizData[question].options[1]}">${quizData[question].options[1]}</label><br>
-                <input type="radio" name="${question}" id="3-${quizData[question].options[2]}" value="${quizData[question].options[2]}">
-                <label for="3-${quizData[question].options[2]}">${quizData[question].options[2]}</label>
-                <input type="radio" name="${question}" id="4-${quizData[question].options[3]}" value="${quizData[question].options[3]}">
-                <label for="4-${quizData[question].options[3]}">${quizData[question].options[3]}</label>
+                <input type="radio" name="${question}" id="${i}-1-${quizData[question].options[0]}" value="${quizData[question].options[0]}">
+                <label for="${i}-1-${quizData[question].options[0]}">${quizData[question].options[0]}</label><br>
+                <input type="radio" name="${question}" id="${i}-2-${quizData[question].options[1]}" value="${quizData[question].options[1]}">
+                <label for="${i}-2-${quizData[question].options[1]}">${quizData[question].options[1]}</label><br>
+                <input type="radio" name="${question}" id="${i}-3-${quizData[question].options[2]}" value="${quizData[question].options[2]}">
+                <label for="${i}-3-${quizData[question].options[2]}">${quizData[question].options[2]}</label>
+                <input type="radio" name="${question}" id="${i}-4-${quizData[question].options[3]}" value="${quizData[question].options[3]}">
+                <label for="${i}-4-${quizData[question].options[3]}">${quizData[question].options[3]}</label>
             </div>
             `;
 
