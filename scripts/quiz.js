@@ -23,45 +23,33 @@ document.addEventListener("DOMContentLoaded", async function () {
         </form>
         <p id="quiz-correct"></p>`;
 
-      const amount = 2;
+      const amount = document.getElementById("question-choice").value;
       const form = document.getElementById("quiz-form");
       let formString = '<h1>Quiz</h1>';
       const correctAnswers = [];
 
-      /*
-      loadQuestions().then((value) => {
-          const questionData = value
-          var option = questionData[i].options
-          option.forEach(function (option) {
-              var li = document.createElement("li")
-              li.textContent = option
-              current_options.appendChild(li)
-          })
-          current_question.innerHTML = `Question ${questionData[i].question}`;
-          current_section.appendChild(current_question);
-          current_section.appendChild(current_options);
-          console.log(questionData)
-      }).catch((err) => {
-          console.log(err);
-      });
-      */
-
       loadQuestions().then((quizData) => {
+        numPicked = [];
+
         for (let i = 0; i < amount; i++) {
-          correctAnswers.push(quizData[i].correctAnswerIndex + 1);
+          var question = Math.floor(Math.random() * quizData.length);
+
+          correctAnswers.push(quizData[question].correctAnswerIndex + 1);
           formString += `
             <div class="question">
-                <h3>${quizData[i].question}</h3>
-                <input type="radio" name="${i}" id="1-${quizData[i].options[0]}" value="${quizData[i].options[0]}">
-                <label for="1-${quizData[i].options[0]}">${quizData[i].options[0]}</label><br>
-                <input type="radio" name="${i}" id="2-${quizData[i].options[1]}" value="${quizData[i].options[1]}">
-                <label for="2-${quizData[i].options[1]}">${quizData[i].options[1]}</label><br>
-                <input type="radio" name="${i}" id="3-${quizData[i].options[2]}" value="${quizData[i].options[2]}">
-                <label for="3-${quizData[i].options[2]}">${quizData[i].options[2]}</label>
-                <input type="radio" name="${i}" id="4-${quizData[i].options[3]}" value="${quizData[i].options[3]}">
-                <label for="4-${quizData[i].options[3]}">${quizData[i].options[3]}</label>
+                <h3>${quizData[question].question}</h3>
+                <input type="radio" name="${question}" id="1-${quizData[question].options[0]}" value="${quizData[question].options[0]}">
+                <label for="1-${quizData[question].options[0]}">${quizData[question].options[0]}</label><br>
+                <input type="radio" name="${question}" id="2-${quizData[question].options[1]}" value="${quizData[question].options[1]}">
+                <label for="2-${quizData[question].options[1]}">${quizData[question].options[1]}</label><br>
+                <input type="radio" name="${question}" id="3-${quizData[question].options[2]}" value="${quizData[question].options[2]}">
+                <label for="3-${quizData[question].options[2]}">${quizData[question].options[2]}</label>
+                <input type="radio" name="${question}" id="4-${quizData[question].options[3]}" value="${quizData[question].options[3]}">
+                <label for="4-${quizData[question].options[3]}">${quizData[question].options[3]}</label>
             </div>
             `;
+
+            numPicked.push(question);
         }
 
         formString += `<button type="submit">Submit</button>`;
@@ -86,5 +74,12 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     // Add event listener to start the quiz when the button is clicked
-    start.addEventListener("click", startQuiz);
+    start.addEventListener("click", () => {
+      console.log(document.getElementById("question-choice").value)
+      if (1 <= document.getElementById("question-choice").value && document.getElementById("question-choice").value <= 100) {
+        startQuiz();
+      } else {
+        alert("Please enter a number between 1 and 100");
+      }
+    });
 });
