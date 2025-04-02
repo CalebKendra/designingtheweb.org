@@ -17,34 +17,69 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 
     function startQuiz() {
-        const value = document.getElementById("question-choice").value;
+      startDisplay.style.display = "none"
+      box.innerHTML = `
+        <form id="quiz-form">
+        </form>
+        <p id="quiz-correct"></p>`;
 
-        console.log(`Selected value: ${value}`); // Check the selected value
+      const amount = document.getElementById("question-choice").value;
+      const form = document.getElementById("quiz-form");
+      let formString = '<h1>Quiz</h1>';
+      const correctAnswers = [];
 
-        for (let i = 1; i < value; i++) { // Adjust loop to include value itself
-            const current_section = document.createElement("section");
-            const current_question = document.createElement("h2");
-            const current_options = document.createElement("li");
-            loadQuestions().then((value) => {
-                const questionData = value
-                var option = questionData[i].options
-                option.forEach(function (option) {
-                    var li = document.createElement("li")
-                    li.textContent = option
-                    current_options.appendChild(li)
-                })
-                current_question.innerHTML = `Question ${questionData[i].question}`;
-                current_section.appendChild(current_question);
-                current_section.appendChild(current_options);
-                console.log(questionData)
-            }).catch((err) => {
-                console.log(err);
-            });
-            box.appendChild(current_section);
+      loadQuestions().then((quizData) => {
+        numPicked = [];
+
+        for (let i = 0; i < amount; i++) {
+          var question = Math.floor(Math.random() * quizData.length);
+
+          correctAnswers.push(quizData[question].correctAnswerIndex + 1);
+          formString += `
+            <div class="question">
+                <h3>${quizData[question].question}</h3>
+                <input type="radio" name="${question}" id="${i}-1-${quizData[question].options[0]}" value="${quizData[question].options[0]}">
+                <label for="${i}-1-${quizData[question].options[0]}">${quizData[question].options[0]}</label><br>
+                <input type="radio" name="${question}" id="${i}-2-${quizData[question].options[1]}" value="${quizData[question].options[1]}">
+                <label for="${i}-2-${quizData[question].options[1]}">${quizData[question].options[1]}</label><br>
+                <input type="radio" name="${question}" id="${i}-3-${quizData[question].options[2]}" value="${quizData[question].options[2]}">
+                <label for="${i}-3-${quizData[question].options[2]}">${quizData[question].options[2]}</label>
+                <input type="radio" name="${question}" id="${i}-4-${quizData[question].options[3]}" value="${quizData[question].options[3]}">
+                <label for="${i}-4-${quizData[question].options[3]}">${quizData[question].options[3]}</label>
+            </div>
+            `;
+
+            numPicked.push(question);
         }
-        startDisplay.style.display = "none"
+
+        formString += `<button type="submit">Submit</button>`;
+        form.innerHTML = formString;
+      });
+
+
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        let correctCount = 0;
+
+        for (let i = 0; i < amount; i++) {
+          const selectedOption = form.querySelector(`input[name="${i}"]:checked`);
+          if (selectedOption && selectedOption.id[0] == correctAnswers[i]) {
+            correctCount++;
+          }
+        }
+
+        document.getElementById("quiz-correct").innerHTML = `Number of correct answers: ${correctCount}`;
+      });
     }
 
     // Add event listener to start the quiz when the button is clicked
-    start.addEventListener("click", startQuiz);
+    start.addEventListener("click", () => {
+      console.log(document.getElementById("question-choice").value)
+      if (1 <= document.getElementById("question-choice").value && document.getElementById("question-choice").value <= 100) {
+        startQuiz();
+      } else {
+        alert("Please enter a number between 1 and 100");
+      }
+    });
 });
