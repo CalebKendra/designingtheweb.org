@@ -38,13 +38,13 @@ document.addEventListener("DOMContentLoaded", async function () {
           formString += `
             <div class="question">
                 <h3>${quizData[question].question}</h3>
-                <input type="radio" name="${question}" id="${i}-1-${quizData[question].options[0]}" value="${quizData[question].options[0]}">
+                <input type="radio" name="${i}" id="${i}-1-${quizData[question].options[0]}" value="${quizData[question].options[0]}">
                 <label for="${i}-1-${quizData[question].options[0]}">${quizData[question].options[0]}</label><br>
-                <input type="radio" name="${question}" id="${i}-2-${quizData[question].options[1]}" value="${quizData[question].options[1]}">
+                <input type="radio" name="${i}" id="${i}-2-${quizData[question].options[1]}" value="${quizData[question].options[1]}">
                 <label for="${i}-2-${quizData[question].options[1]}">${quizData[question].options[1]}</label><br>
-                <input type="radio" name="${question}" id="${i}-3-${quizData[question].options[2]}" value="${quizData[question].options[2]}">
+                <input type="radio" name="${i}" id="${i}-3-${quizData[question].options[2]}" value="${quizData[question].options[2]}">
                 <label for="${i}-3-${quizData[question].options[2]}">${quizData[question].options[2]}</label>
-                <input type="radio" name="${question}" id="${i}-4-${quizData[question].options[3]}" value="${quizData[question].options[3]}">
+                <input type="radio" name="${i}" id="${i}-4-${quizData[question].options[3]}" value="${quizData[question].options[3]}">
                 <label for="${i}-4-${quizData[question].options[3]}">${quizData[question].options[3]}</label>
             </div>
             `;
@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         let correctCount = 0;
 
         for (let i = 0; i < amount; i++) {
-          const selectedOption = form.querySelector(`input[name="${i}"]:checked`);
-          if (selectedOption && selectedOption.id[0] == correctAnswers[i]) {
+          let selectedOption = form.querySelector(`input[name="${i}"]:checked`);
+          if (selectedOption && parseInt(selectedOption.id[2]) == correctAnswers[i]) {
             correctCount++;
           }
         }

@@ -22,20 +22,20 @@
     {
         "question": "Which HTML tag is used to define an internal style sheet?",
         "options": [
-            "<css>",
-            "<script>",
-            "<style>",
-            "<design>"
+            "css",
+            "script",
+            "style",
+            "design"
         ],
         "correctAnswerIndex": 2
     },
     {
         "question": "What is the correct HTML element for inserting a line break?",
         "options": [
-            "<break>",
-            "<lb>",
-            "<newline>",
-            "<br>"
+            "break",
+            "lb",
+            "newline",
+            "br"
         ],
         "correctAnswerIndex": 3
     },
@@ -74,7 +74,7 @@
         "options": [
             "p {font-weight: bold;}",
             "p {text-style: bold;}",
-            "<p style='font-size: bold;'>",
+            "p style='font-size: bold;",
             "p.all {font-weight: bold;}"
         ],
         "correctAnswerIndex": 0
@@ -102,10 +102,10 @@
     {
         "question": "What is the correct HTML for creating a hyperlink?",
         "options": [
-            "<a url='http://example.com'>Example</a>",
-            "<a href='http://example.com'>Example</a>",
-            "<hyperlink>http://example.com</hyperlink>",
-            "<link>http://example.com</link>"
+            "a url='http://example.com'>Example</a",
+            "a href='http://example.com'>Example</a",
+            "hyperlink>http://example.com</hyperlink",
+            "link>http://example.com</link"
         ],
         "correctAnswerIndex": 1
     },
@@ -162,10 +162,10 @@
     {
         "question": "Which HTML5 element is used to specify a footer for a document or section?",
         "options": [
-            "<bottom>",
-            "<section>",
-            "<footer>",
-            "<end>"
+            "bottom",
+            "section",
+            "footer",
+            "end"
         ],
         "correctAnswerIndex": 2
     },
