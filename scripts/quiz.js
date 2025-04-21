@@ -11,12 +11,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const quizBox = document.querySelector("#quiz-box");
 
   // Style the start button
-  startButton.style.backgroundColor = rootStyle.getPropertyValue("--secondary-color");
+  startButton.style.backgroundColor =
+    rootStyle.getPropertyValue("--secondary-color");
 
   startButton.addEventListener("click", async () => {
-    const questionAmount = parseInt(document.getElementById("question-choice").value);
-    if (questionAmount < 1 || questionAmount > 100 || isNaN(questionAmount)) {
-      alert("Please enter a number between 1 and 100");
+    const questionAmount = parseInt(
+      document.getElementById("question-choice").value,
+    );
+    if (questionAmount < 1 || questionAmount > 20 || isNaN(questionAmount)) {
+      alert("Please enter a number between 1 and 20");
       return;
     }
 
@@ -46,10 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
       formHTML += `
         <div class="question">
           <h3>${q.question}</h3>
-          ${q.options.map((opt, idx) => `
+          ${q.options
+            .map(
+              (opt, idx) => `
             <input type="radio" name="q${i}" id="q${i}-opt${idx}" value="${opt}">
             <label for="q${i}-opt${idx}">${opt}</label><br>
-          `).join('')}
+          `,
+            )
+            .join("")}
         </div>
       `;
     });
@@ -75,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
             question: q.question,
             options: q.options,
             selected: selectedValue,
-            correct: correctValue
+            correct: correctValue,
           });
         }
       });
@@ -83,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const resultData = {
         score,
         total: selectedQuestions.length,
-        incorrectQuestions
+        incorrectQuestions,
       };
 
       localStorage.setItem("quizResults", JSON.stringify(resultData));
