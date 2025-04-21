@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Results</title>
+  <link rel="stylesheet" href="css/quiz-results.css" />
+  <script src="scripts/quiz_results.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="assets/images/logosimple.png" alt="Site Logo" />
+      </a>
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="resources.html">Resources</a>
+        <a href="contributors.html">Contributors</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="results-container">
+      <h1>Quiz Results</h1>
+      
+      <!-- Score display -->
+      <p id="quiz-results" class="result-score">Loading your score...</p>
+
+      <!-- Incorrect questions display -->
+      <div id="incorrect-questions" class="incorrect-questions">
+        <!-- This will be filled in dynamically by JS -->
+      </div>
+
+      <div class="result-details">
+        <a href="quizzes.html" class="button-link">Try Again</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
