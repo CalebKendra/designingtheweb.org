@@ -6,22 +6,10 @@
   <title>Quiz Results</title>
   <link rel="stylesheet" href="css/quiz-results.css" />
   <script src="scripts/quiz_results.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="index.html">
-        <img src="assets/images/logosimple.png" alt="Site Logo" />
-      </a>
-      <div class="nav-links">
-        <a href="home.html">Home</a>
-        <a href="syllabus.html">Syllabus</a>
-        <a href="calendar.html">Calendar</a>
-        <a href="resources.html">Resources</a>
-        <a href="contributors.html">Contributors</a>
-      </div>
-    </nav>
-  </header>
+    <div id="header"></div>
 
   <main>
     <div id="results-container">
@@ -40,5 +28,12 @@
       </div>
     </div>
   </main>
+  <footer id="footer"></footer>
 </body>
+<script>
+    $(document).ready(function(){
+        $("#header").load("_includes/header.html");
+        $("#footer").load("_includes/footer.html");
+    });
+</script>
 </html>
